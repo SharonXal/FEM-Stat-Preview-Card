@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+
+#card-container{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 375px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: hsl(244, 38%, 16%);
+}
+
+#description{
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#description h2{
+    text-align: center;
+    width: 60%;
+    color: white;
+    font-size: 1.5rem;
+}
+#description h2 span#p-text{
+    color: hsl(277, 64%, 61%);
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+#description p{
+    text-align: center;
+    width: 70%;
+    color: hsl(0, 0%, 100%, 0.75);
+}
+#description #comp-temp-query{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    font-size: 1.4rem;
+    margin-bottom: -10px;
+    color: white;
+}
+#description #comp-temp-query p{
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+    color: hsl(0, 0%, 100%, 0.6);
+}
+#description #comp-temp-query #comp{
+    text-align: center;
+}
+#description #comp-temp-query #temp{
+    text-align: center;
+}
+#description #comp-temp-query #query{
+    text-align: center;
+}
+#image{
+    display: flex;
+    width: 100%;
+    background: rgba(168, 88, 218, 1);
+}
+#image #desktop{
+    display: none;
+}
+#image #mobile{
+    width: 100%;
+    opacity: 0.4;
+}
+
+@media (min-width: 934px){
+
+    #card-container{
+        flex-direction: row;
+        align-items: center;
+        width: 1000px;
+    }
+
+    #description{
+        width: 50%;
+        height: 100%;
+        margin-left: 1px;
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+    #description h2{
+        width: 75%;
+        margin-left: -25px;
+        font-size: 2rem;
+        text-align: left;
+    }
+    #description p{
+        text-align: left;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    #description h2 span#p-text{
+        font-size: 2rem;
+    }
+
+    #image{
+        width: 50%;
+        padding: 0px;
+        margin-left: 20px;
+    }
+    #image #mobile{
+        display: none;
+    }
+    #image #desktop{
+        display: flex;
+        width: 100%;
+        opacity: 0.4;
+    }
+
+    #description #comp-temp-query{
+        margin-left: -25px;
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #description #comp-temp-query
+    #comp, #temp, #query{
+        text-align: left;
+    }
+
+}
